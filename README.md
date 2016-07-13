@@ -1,0 +1,2 @@
+# automate
+chef automate install
