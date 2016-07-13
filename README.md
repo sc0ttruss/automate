@@ -1,2 +1,3 @@
 # automate
-chef automate install
+
+Install chef automate platform on one vm.

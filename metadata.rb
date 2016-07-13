@@ -1,0 +1,7 @@
+name 'automate'
+maintainer 'The Authors'
+maintainer_email 'you@example.com'
+license 'all_rights'
+description 'Installs/Configures automate'
+long_description 'Installs/Configures automate'
+version '0.1.0'
