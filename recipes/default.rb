@@ -5,7 +5,7 @@
 # Copyright (c) 2016 The Authors, All Rights Reserved.
 
 # install rpm package(s)
-node['delivery_server']['packages'].each do |name, versioned_name|
+node['automate']['packages'].each do |name, versioned_name|
   unless node['automate']['use_package_manager']
     remote_file "/var/tmp/#{versioned_name}" do
       source "#{node['automate']['base_package_url']}/#{versioned_name}"
