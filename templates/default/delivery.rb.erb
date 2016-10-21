@@ -1,0 +1,4 @@
+delivery_fqdn "<%=node['automate']['url']['delivery']%>"
+delivery['chef_username'] = "<%=node['automate']['chef_username']%>"
+delivery['chef_private_key'] = "/etc/delivery/<%=node['automate']['chef_user_private_key']%>"
+delivery['chef_server'] = "<%=node['automate']['url_chef']%>/organizations/<%=node['automate']['organisation']%>"
