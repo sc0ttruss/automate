@@ -16,4 +16,4 @@ default['automate']['chef_username'] = 'srv-delivery'
 default['automate']['chef_user_private_key'] = 'srv-delivery.pem'
 default['automate']['delivery_org_key'] = "#{node['automate']['organisation']}_ssh_key"
 default['automate']['url_chef'] = 'https://chef.myorg.chefdemo.net'
-default['automate']['url']['delivery'] = 'delivery.myorg.chefdemo.net'
+default['automate']['url']['delivery'] = 'automate.myorg.chefdemo.net'
