@@ -149,3 +149,14 @@ remote_file '/mnt/share/chef/deliverypassword.txt' do
   only_if { ::File.directory?("#{node['automate']['kitchen_shared_folder']}") }
     # checksum 'abc123'
   end
+
+  # copy the chefdk for the target build node onto the automate server
+
+  remote_file "/opt/delivery/#{node['automate']['chefdk']['redhat']}" do
+    source "file:///mnt/share/chef/#{node['automate']['chefdk']['redhat']}"
+    owner 'root'
+    group 'root'
+    mode 00755
+    only_if { ::File.directory?("#{node['automate']['kitchen_shared_folder']}") }
+    # checksum 'abc123'
+  end
