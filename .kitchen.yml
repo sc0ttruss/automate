@@ -56,7 +56,7 @@ suites:
   - name: default
     data_bag_path: "test/integration/data_bags"
     run_list:
-      - recipe[automate::default]
+      # - recipe[automate::default]
       - recipe[automate::installbuildnode]
     attributes:
       automate:
